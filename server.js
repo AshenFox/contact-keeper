@@ -21,13 +21,11 @@ console.log(__dirname);
 // Serve static assets in production
 if (process.env.NODE_ENV === "production") {
   // Set static folder
-  app.use(express.static("app/client/build"));
+  app.use(express.static("client/build"));
   console.log(__dirname);
 
   app.get("*", (req, res) =>
-    res.sendFile(
-      path.resolve(__dirname, "app", "client", "build", "index.html")
-    )
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
   );
 }
 
