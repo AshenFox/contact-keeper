@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://ClusterAdministrator:Asdf321456@contactskeeperapi-zckd7.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "teddybears"
+}
